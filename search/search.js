@@ -7,16 +7,18 @@
 
 var indexSectionsWithContent =
 {
-  0: "or",
-  1: "r",
-  2: "o"
+  0: "gmor",
+  1: "gr",
+  2: "m",
+  3: "o"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "files",
-  2: "pages"
+  2: "functions",
+  3: "pages"
 };
 
 function convertToId(search)
