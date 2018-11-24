@@ -99,7 +99,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Collaboration diagram for editor::CanvasController:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classeditor_1_1_canvas_controller__coll__graph.svg" width="174" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classeditor_1_1_canvas_controller__coll__graph.svg" width="174" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -107,6 +107,14 @@ Collaboration diagram for editor::CanvasController:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad6b206c08ddf4e81116f30ca8b4af0ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeditor_1_1_canvas_controller.html#ad6b206c08ddf4e81116f30ca8b4af0ff">CanvasController</a> (<a class="el" href="classeditor_1_1_graphic_document.html">GraphicDocument</a> &amp;model_, <a class="el" href="classeditor_1_1_main_view.html">MainView</a> &amp;view_)</td></tr>
 <tr class="separator:ad6b206c08ddf4e81116f30ca8b4af0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a731a823f9b09f71e4573251efbd6db28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeditor_1_1_canvas_controller.html#a731a823f9b09f71e4573251efbd6db28">import_document</a> (const std::string &amp;path)</td></tr>
+<tr class="separator:a731a823f9b09f71e4573251efbd6db28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fcb3daf0f880710101f35545defedeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeditor_1_1_canvas_controller.html#a3fcb3daf0f880710101f35545defedeb">export_document</a> (const std::string &amp;path)</td></tr>
+<tr class="separator:a3fcb3daf0f880710101f35545defedeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe49f4e71576b14317cb98673b2edca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeditor_1_1_canvas_controller.html#a8fe49f4e71576b14317cb98673b2edca">add_primitive</a> (std::shared_ptr&lt; <a class="el" href="classeditor_1_1figures_1_1_canvas_primitive.html">figures::CanvasPrimitive</a> &gt; &amp;primitive)</td></tr>
+<tr class="separator:a8fe49f4e71576b14317cb98673b2edca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba5b0d3290978e0d3483847c5090b7f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeditor_1_1_canvas_controller.html#aba5b0d3290978e0d3483847c5090b7f9">remove_primitive</a> (std::shared_ptr&lt; <a class="el" href="classeditor_1_1figures_1_1_canvas_primitive.html">figures::CanvasPrimitive</a> &gt; &amp;primitive)</td></tr>
+<tr class="separator:aba5b0d3290978e0d3483847c5090b7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad6b206c08ddf4e81116f30ca8b4af0ff"></a>
@@ -129,6 +137,72 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Construct controller with model and view </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a8fe49f4e71576b14317cb98673b2edca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void editor::CanvasController::add_primitive </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classeditor_1_1figures_1_1_canvas_primitive.html">figures::CanvasPrimitive</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>primitive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3fcb3daf0f880710101f35545defedeb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void editor::CanvasController::export_document </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a731a823f9b09f71e4573251efbd6db28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void editor::CanvasController::import_document </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aba5b0d3290978e0d3483847c5090b7f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void editor::CanvasController::remove_primitive </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classeditor_1_1figures_1_1_canvas_primitive.html">figures::CanvasPrimitive</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>primitive</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

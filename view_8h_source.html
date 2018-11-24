@@ -91,34 +91,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <a href="view_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="document__model_8h.html">document_model.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="model_8h.html">model.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>editor {</div>
 <div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classeditor_1_1_main_view.html">    6</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classeditor_1_1_main_view.html">MainView</a> {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <span class="comment">/*</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">         * Constructor for main view (requires model), doesn&#39;t change model</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">         */</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classeditor_1_1_main_view.html#a96c6e98aa93adbd732a35e5abc4a857f">MainView</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_graphic_document.html">GraphicDocument</a>&amp; model_);</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="comment">/*</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">         * Function to redraw picture, if data has changed</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">         */</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classeditor_1_1_main_view.html#a7424e7f86a3c72f06681bf740e1c0881">redraw</a>();</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">const</span> <a class="code" href="classeditor_1_1_graphic_document.html">GraphicDocument</a>&amp; model;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="comment">/*</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">         * Render current model</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">         */</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">void</span> render();</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    };</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 <div class="ttc" id="classeditor_1_1_main_view_html"><div class="ttname"><a href="classeditor_1_1_main_view.html">editor::MainView</a></div><div class="ttdef"><b>Definition:</b> view.h:6</div></div>
 <div class="ttc" id="classeditor_1_1_main_view_html_a7424e7f86a3c72f06681bf740e1c0881"><div class="ttname"><a href="classeditor_1_1_main_view.html#a7424e7f86a3c72f06681bf740e1c0881">editor::MainView::redraw</a></div><div class="ttdeci">void redraw()</div><div class="ttdef"><b>Definition:</b> view.cpp:8</div></div>
-<div class="ttc" id="classeditor_1_1_graphic_document_html"><div class="ttname"><a href="classeditor_1_1_graphic_document.html">editor::GraphicDocument</a></div><div class="ttdef"><b>Definition:</b> document_model.h:9</div></div>
+<div class="ttc" id="model_8h_html"><div class="ttname"><a href="model_8h.html">model.h</a></div></div>
+<div class="ttc" id="classeditor_1_1_graphic_document_html"><div class="ttname"><a href="classeditor_1_1_graphic_document.html">editor::GraphicDocument</a></div><div class="ttdef"><b>Definition:</b> model.h:9</div></div>
 <div class="ttc" id="classeditor_1_1_main_view_html_a96c6e98aa93adbd732a35e5abc4a857f"><div class="ttname"><a href="classeditor_1_1_main_view.html#a96c6e98aa93adbd732a35e5abc4a857f">editor::MainView::MainView</a></div><div class="ttdeci">MainView(const GraphicDocument &amp;model_)</div><div class="ttdef"><b>Definition:</b> view.cpp:4</div></div>
-<div class="ttc" id="document__model_8h_html"><div class="ttname"><a href="document__model_8h.html">document_model.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

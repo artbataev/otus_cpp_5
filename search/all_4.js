@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['graphicdocument',['GraphicDocument',['../classeditor_1_1_graphic_document.html',1,'editor']]],
-  ['graphicdocument',['GraphicDocument',['../classeditor_1_1_graphic_document.html#aedde004baadeae466f6281fb2f78cd23',1,'editor::GraphicDocument::GraphicDocument()=default'],['../classeditor_1_1_graphic_document.html#a5c7d16fe4b38920fa507731a503b79dc',1,'editor::GraphicDocument::GraphicDocument(const std::string &amp;path)']]]
+  ['import_5fdocument',['import_document',['../classeditor_1_1_canvas_controller.html#a731a823f9b09f71e4573251efbd6db28',1,'editor::CanvasController']]]
 ];

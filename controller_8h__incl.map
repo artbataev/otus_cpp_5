@@ -1,5 +1,5 @@
 <map id="include/controller.h" name="include/controller.h">
-<area shape="rect" id="node3" href="$document__model_8h.html" title="document_model.h" alt="" coords="69,155,200,181"/>
-<area shape="rect" id="node9" href="$view_8h.html" title="view.h" alt="" coords="109,80,168,107"/>
-<area shape="rect" id="node6" href="$canvas__primitives_8h.html" title="canvas_primitives.h" alt="" coords="273,229,412,256"/>
+<area shape="rect" id="node3" href="$model_8h.html" title="model.h" alt="" coords="219,155,287,181"/>
+<area shape="rect" id="node8" href="$view_8h.html" title="view.h" alt="" coords="285,80,344,107"/>
+<area shape="rect" id="node6" href="$canvas__primitives_8h.html" title="canvas_primitives.h" alt="" coords="63,229,201,256"/>
 </map>

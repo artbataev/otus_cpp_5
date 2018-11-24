@@ -92,24 +92,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="controller_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="document__model_8h.html">document_model.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="model_8h.html">model.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="view_8h.html">view.h</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>editor {</div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classeditor_1_1_canvas_controller.html">    8</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classeditor_1_1_canvas_controller.html">CanvasController</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <a class="code" href="classeditor_1_1_canvas_controller.html#ad6b206c08ddf4e81116f30ca8b4af0ff">CanvasController</a>(<a class="code" href="classeditor_1_1_graphic_document.html">GraphicDocument</a>&amp; model_, <a class="code" href="classeditor_1_1_main_view.html">MainView</a>&amp; view_);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <a class="code" href="classeditor_1_1_graphic_document.html">GraphicDocument</a> model;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="classeditor_1_1_main_view.html">MainView</a> view;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    };</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="classeditor_1_1_canvas_controller.html#ad6b206c08ddf4e81116f30ca8b4af0ff">CanvasController</a>(<a class="code" href="classeditor_1_1_graphic_document.html">GraphicDocument</a>&amp; model_, <a class="code" href="classeditor_1_1_main_view.html">MainView</a>&amp; view_);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classeditor_1_1_canvas_controller.html#a731a823f9b09f71e4573251efbd6db28">import_document</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classeditor_1_1_canvas_controller.html#a3fcb3daf0f880710101f35545defedeb">export_document</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classeditor_1_1_canvas_controller.html#a8fe49f4e71576b14317cb98673b2edca">add_primitive</a>(std::shared_ptr&lt;figures::CanvasPrimitive&gt;&amp; primitive);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classeditor_1_1_canvas_controller.html#aba5b0d3290978e0d3483847c5090b7f9">remove_primitive</a>(std::shared_ptr&lt;figures::CanvasPrimitive&gt;&amp; primitive);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classeditor_1_1_graphic_document.html">GraphicDocument</a> model;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classeditor_1_1_main_view.html">MainView</a> view;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    };</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 <div class="ttc" id="classeditor_1_1_canvas_controller_html_ad6b206c08ddf4e81116f30ca8b4af0ff"><div class="ttname"><a href="classeditor_1_1_canvas_controller.html#ad6b206c08ddf4e81116f30ca8b4af0ff">editor::CanvasController::CanvasController</a></div><div class="ttdeci">CanvasController(GraphicDocument &amp;model_, MainView &amp;view_)</div><div class="ttdef"><b>Definition:</b> controller.cpp:4</div></div>
 <div class="ttc" id="classeditor_1_1_main_view_html"><div class="ttname"><a href="classeditor_1_1_main_view.html">editor::MainView</a></div><div class="ttdef"><b>Definition:</b> view.h:6</div></div>
+<div class="ttc" id="classeditor_1_1_canvas_controller_html_aba5b0d3290978e0d3483847c5090b7f9"><div class="ttname"><a href="classeditor_1_1_canvas_controller.html#aba5b0d3290978e0d3483847c5090b7f9">editor::CanvasController::remove_primitive</a></div><div class="ttdeci">void remove_primitive(std::shared_ptr&lt; figures::CanvasPrimitive &gt; &amp;primitive)</div><div class="ttdef"><b>Definition:</b> controller.cpp:21</div></div>
+<div class="ttc" id="model_8h_html"><div class="ttname"><a href="model_8h.html">model.h</a></div></div>
 <div class="ttc" id="view_8h_html"><div class="ttname"><a href="view_8h.html">view.h</a></div></div>
+<div class="ttc" id="classeditor_1_1_canvas_controller_html_a8fe49f4e71576b14317cb98673b2edca"><div class="ttname"><a href="classeditor_1_1_canvas_controller.html#a8fe49f4e71576b14317cb98673b2edca">editor::CanvasController::add_primitive</a></div><div class="ttdeci">void add_primitive(std::shared_ptr&lt; figures::CanvasPrimitive &gt; &amp;primitive)</div><div class="ttdef"><b>Definition:</b> controller.cpp:17</div></div>
 <div class="ttc" id="classeditor_1_1_canvas_controller_html"><div class="ttname"><a href="classeditor_1_1_canvas_controller.html">editor::CanvasController</a></div><div class="ttdef"><b>Definition:</b> controller.h:8</div></div>
-<div class="ttc" id="classeditor_1_1_graphic_document_html"><div class="ttname"><a href="classeditor_1_1_graphic_document.html">editor::GraphicDocument</a></div><div class="ttdef"><b>Definition:</b> document_model.h:9</div></div>
-<div class="ttc" id="document__model_8h_html"><div class="ttname"><a href="document__model_8h.html">document_model.h</a></div></div>
+<div class="ttc" id="classeditor_1_1_canvas_controller_html_a3fcb3daf0f880710101f35545defedeb"><div class="ttname"><a href="classeditor_1_1_canvas_controller.html#a3fcb3daf0f880710101f35545defedeb">editor::CanvasController::export_document</a></div><div class="ttdeci">void export_document(const std::string &amp;path)</div><div class="ttdef"><b>Definition:</b> controller.cpp:13</div></div>
+<div class="ttc" id="classeditor_1_1_canvas_controller_html_a731a823f9b09f71e4573251efbd6db28"><div class="ttname"><a href="classeditor_1_1_canvas_controller.html#a731a823f9b09f71e4573251efbd6db28">editor::CanvasController::import_document</a></div><div class="ttdeci">void import_document(const std::string &amp;path)</div><div class="ttdef"><b>Definition:</b> controller.cpp:9</div></div>
+<div class="ttc" id="classeditor_1_1_graphic_document_html"><div class="ttname"><a href="classeditor_1_1_graphic_document.html">editor::GraphicDocument</a></div><div class="ttdef"><b>Definition:</b> model.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

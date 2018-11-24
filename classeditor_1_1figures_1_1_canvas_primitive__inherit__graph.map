@@ -1,0 +1,6 @@
+<map id="editor::figures::CanvasPrimitive" name="editor::figures::CanvasPrimitive">
+<area shape="rect" id="node2" href="$classeditor_1_1figures_1_1_circle.html" title="{editor::figures::Circle\n||+ Circle()\l+ render()\l}" alt="" coords="5,211,147,303"/>
+<area shape="rect" id="node3" href="$classeditor_1_1figures_1_1_line.html" title="{editor::figures::Line\n||+ Line()\l+ render()\l}" alt="" coords="172,211,305,303"/>
+<area shape="rect" id="node4" href="$classeditor_1_1figures_1_1_polygon.html" title="{editor::figures::Polygon\n||+ Polygon()\l+ Polygon()\l+ Polygon()\l+ add_point()\l+ render()\l}" alt="" coords="330,189,485,325"/>
+<area shape="rect" id="node5" href="$classeditor_1_1figures_1_1_rectangle.html" title="{editor::figures::Rectangle\n||+ Rectangle()\l+ render()\l}" alt="" coords="511,211,679,303"/>
+</map>

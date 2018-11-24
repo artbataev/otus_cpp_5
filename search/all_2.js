@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['deserialize',['deserialize',['../classeditor_1_1_canvas_primitive.html#a3112411fe451ca0dc9bc6640746fe087',1,'editor::CanvasPrimitive']]],
-  ['document_5fmodel_2ecpp',['document_model.cpp',['../document__model_8cpp.html',1,'']]],
-  ['document_5fmodel_2eh',['document_model.h',['../document__model_8h.html',1,'']]]
+  ['editor',['editor',['../namespaceeditor.html',1,'']]],
+  ['export_5fdocument',['export_document',['../classeditor_1_1_canvas_controller.html#a3fcb3daf0f880710101f35545defedeb',1,'editor::CanvasController']]],
+  ['figures',['figures',['../namespaceeditor_1_1figures.html',1,'editor']]]
 ];

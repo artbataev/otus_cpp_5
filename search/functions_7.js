@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['save_5fdocument',['save_document',['../classeditor_1_1_graphic_document.html#a9c11e4c0ed8109d866cab3826835ccce',1,'editor::GraphicDocument']]],
-  ['serialize',['serialize',['../classeditor_1_1_canvas_primitive.html#ae9f46ec86170a0543c1da510f0d54790',1,'editor::CanvasPrimitive']]]
+  ['polygon',['Polygon',['../classeditor_1_1figures_1_1_polygon.html#aa33fafb2df26975bc640000b0c3d860b',1,'editor::figures::Polygon::Polygon(const Color &amp;color_)'],['../classeditor_1_1figures_1_1_polygon.html#a64720727e8e2ae2f24286d74af255447',1,'editor::figures::Polygon::Polygon(const Color &amp;color_, const std::vector&lt; Coordinate &gt; &amp;points_)'],['../classeditor_1_1figures_1_1_polygon.html#a8449cafe7ea6530742ac7a3cc3ab766a',1,'editor::figures::Polygon::Polygon(const Color &amp;color_, const Coordinate &amp;start_point)']]]
 ];
