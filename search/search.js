@@ -7,18 +7,24 @@
 
 var indexSectionsWithContent =
 {
-  0: "gmor",
-  1: "gr",
-  2: "m",
-  3: "o"
+  0: "acdeglmoprsvxy",
+  1: "cglmpr",
+  2: "e",
+  3: "cdgrv",
+  4: "acdglmrs",
+  5: "xy",
+  6: "o"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "files",
-  2: "functions",
-  3: "pages"
+  1: "classes",
+  2: "namespaces",
+  3: "files",
+  4: "functions",
+  5: "variables",
+  6: "pages"
 };
 
 function convertToId(search)

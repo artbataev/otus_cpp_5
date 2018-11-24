@@ -1,0 +1,10 @@
+<map id="include/canvas_primitives.h" name="include/canvas_primitives.h">
+<area shape="rect" id="node2" href="$document__model_8h.html" title="include/document_model.h" alt="" coords="139,80,316,107"/>
+<area shape="rect" id="node9" href="$canvas__primitives_8cpp.html" title="src/canvas_primitives.cpp" alt="" coords="341,80,515,107"/>
+<area shape="rect" id="node3" href="$controller_8h.html" title="include/controller.h" alt="" coords="15,229,144,256"/>
+<area shape="rect" id="node5" href="$gui_8cpp.html" title="src/gui.cpp" alt="" coords="153,304,239,331"/>
+<area shape="rect" id="node6" href="$view_8h.html" title="include/view.h" alt="" coords="221,155,325,181"/>
+<area shape="rect" id="node8" href="$document__model_8cpp.html" title="src/document_model.cpp" alt="" coords="351,155,519,181"/>
+<area shape="rect" id="node4" href="$controller_8cpp.html" title="src/controller.cpp" alt="" coords="5,304,128,331"/>
+<area shape="rect" id="node7" href="$view_8cpp.html" title="src/view.cpp" alt="" coords="271,229,367,256"/>
+</map>
