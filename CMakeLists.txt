@@ -14,7 +14,7 @@ include_directories("${PROJECT_SOURCE_DIR}/include")
 
 add_executable(editor src/main.cpp
         src/canvas_primitives.cpp include/canvas_primitives.h
-        src/document_model.cpp include/document_model.h
+        src/model.cpp include/model.h
         src/view.cpp include/view.h
         src/controller.cpp include/controller.h)
 

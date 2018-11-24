@@ -29,21 +29,27 @@ namespace editor {
         int x;
         int y;
     };
+}
 
+namespace editor::figures {
     /**
      * Basic class for all primitives (figures)
      */
     class CanvasPrimitive {
     public:
         CanvasPrimitive() = default;
+
         explicit CanvasPrimitive(const Color& color_);
+
         CanvasPrimitive(const Color& color_, int z_index_);
 
         void move_to_z_index(int z_index_);
 
         virtual void render() = 0;
-        virtual std::string serialize() = 0;
-        virtual void deserialize(const std::string& data) = 0;
+//
+//        virtual std::string serialize() = 0;
+//
+//        virtual void deserialize(const std::string& data) = 0;
 
     private:
         Color color;
@@ -53,7 +59,8 @@ namespace editor {
     /**
      * Primitive - Line
      */
-    class Line : CanvasPrimitive {
+    class Line : public CanvasPrimitive {
+    public:
         Line(const Color& color_, const Coordinate& point1_, const Coordinate& point2_);
 
         void render() override;
@@ -66,7 +73,8 @@ namespace editor {
     /**
      * Primitive - Circle
      */
-    class Circle : CanvasPrimitive {
+    class Circle : public CanvasPrimitive {
+    public:
         Circle(const Color& color_, const Coordinate& center_, double radius_);
 
         void render() override;
@@ -79,7 +87,8 @@ namespace editor {
     /**
      * Primitive - Rectangle
      */
-    class Rectangle : CanvasPrimitive {
+    class Rectangle : public CanvasPrimitive {
+    public:
         Rectangle(const Color& color_, const Coordinate& left_top_, const Coordinate& right_bottom_);
 
         void render() override;
@@ -92,7 +101,8 @@ namespace editor {
     /**
      * Primitive - Polygon
      */
-    class Polygon : CanvasPrimitive {
+    class Polygon : public CanvasPrimitive {
+    public:
         Polygon(const Color& color_);
 
         Polygon(const Color& color_, const std::vector<Coordinate>& points_);

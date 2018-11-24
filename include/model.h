@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-#include <map>
+#include <vector>
 #include <memory>
 #include "canvas_primitives.h"
 
@@ -26,18 +26,19 @@ namespace editor {
         /**
          * Add primitive (figure) to document
          */
-        void add_primitive_to_document( std::shared_ptr<editor::CanvasPrimitive>& primitive);
+        void add_primitive_to_document(std::shared_ptr<figures::CanvasPrimitive>& primitive);
 
         /**
          * Remove primitive (figure) from document
          */
-        void remove_primitive_from_document(std::shared_ptr<editor::CanvasPrimitive>& primitive);
+        void remove_primitive_from_document(std::shared_ptr<figures::CanvasPrimitive>& primitive);
 
         /**
          * Save document to file
          */
         void save_document(const std::string& path);
+
     private:
-        std::map<void*, std::shared_ptr<editor::CanvasPrimitive>> elements; // using raw address as hash
+        std::vector<std::shared_ptr<figures::CanvasPrimitive>> elements; // using raw address as hash
     };
 }

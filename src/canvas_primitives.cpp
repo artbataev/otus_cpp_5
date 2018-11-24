@@ -9,8 +9,9 @@ namespace editor {
     }
 
     Color::Color(uint8_t r_, uint8_t g_, uint8_t b_) : r{r_}, g{g_}, b{b_} {}
+}
 
-
+namespace editor::figures {
     CanvasPrimitive::CanvasPrimitive(const Color& color_) : color{color_}, z_index{0} {}
 
     CanvasPrimitive::CanvasPrimitive(const Color& color_, int z_index_) : color{color_}, z_index{z_index_} {}
