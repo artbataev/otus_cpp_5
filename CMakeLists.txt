@@ -10,8 +10,13 @@ project(editor VERSION ${PROJECT_VERSION} LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 
+include_directories("${PROJECT_SOURCE_DIR}/include")
 
-add_executable(editor src/gui.cpp)
+add_executable(editor src/gui.cpp
+        src/canvas_primitives.cpp include/canvas_primitives.h
+        src/document_model.cpp include/document_model.h
+        src/view.cpp include/view.h
+        src/controller.cpp include/controller.h)
 
 install(TARGETS editor RUNTIME DESTINATION bin)
 
