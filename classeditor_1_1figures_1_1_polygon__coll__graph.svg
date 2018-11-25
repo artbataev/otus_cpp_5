@@ -19,11 +19,11 @@
 <text text-anchor="start" x="26.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Polygon()</text>
 <text text-anchor="start" x="26.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Polygon()</text>
 <text text-anchor="start" x="26.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ add_point()</text>
-<text text-anchor="start" x="26.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ render()</text>
+<text text-anchor="start" x="26.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_representation()</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="classeditor_1_1figures_1_1_canvas_primitive.html" target="_top" xlink:title="{editor::figures::CanvasPrimitive\n||+ CanvasPrimitive()\l+ CanvasPrimitive()\l+ CanvasPrimitive()\l+ move_to_z_index()\l+ render()\l}">
+<g id="a_node2"><a xlink:href="classeditor_1_1figures_1_1_canvas_primitive.html" target="_top" xlink:title="{editor::figures::CanvasPrimitive\n||+ CanvasPrimitive()\l+ CanvasPrimitive()\l+ CanvasPrimitive()\l+ move_to_z_index()\l+ get_representation()\l}">
 <polygon fill="none" stroke="black" points="0,-138.5 0,-239.5 154,-239.5 154,-138.5 0,-138.5"/>
 <text text-anchor="middle" x="77" y="-227.5" font-family="Helvetica,sans-Serif" font-size="10.00">editor::figures::CanvasPrimitive</text>
 <polyline fill="none" stroke="black" points="0,-220.5 154,-220.5 "/>
@@ -33,7 +33,7 @@
 <text text-anchor="start" x="8" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ CanvasPrimitive()</text>
 <text text-anchor="start" x="8" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ CanvasPrimitive()</text>
 <text text-anchor="start" x="8" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ move_to_z_index()</text>
-<text text-anchor="start" x="8" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ render()</text>
+<text text-anchor="start" x="8" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_representation()</text>
 </a>
 </g>
 </g>

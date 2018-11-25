@@ -119,8 +119,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6bbd9cafc1d99ea9482d044c3fa2c896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af83f698f360a14aa3be2040b9f2825c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeditor_1_1figures_1_1_canvas_primitive.html#af83f698f360a14aa3be2040b9f2825c9">move_to_z_index</a> (int z_index_)</td></tr>
 <tr class="separator:af83f698f360a14aa3be2040b9f2825c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfc22de6388cdef5a31f78920d8c4943"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeditor_1_1figures_1_1_canvas_primitive.html#acfc22de6388cdef5a31f78920d8c4943">render</a> ()=0</td></tr>
-<tr class="separator:acfc22de6388cdef5a31f78920d8c4943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f0d2b38f040d21743e47a29c4e79736"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeditor_1_1figures_1_1_canvas_primitive.html#a5f0d2b38f040d21743e47a29c4e79736">get_representation</a> ()=0</td></tr>
+<tr class="separator:a5f0d2b38f040d21743e47a29c4e79736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Basic class for all primitives (figures) </p>
@@ -199,6 +199,31 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a5f0d2b38f040d21743e47a29c4e79736"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string editor::figures::CanvasPrimitive::get_representation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classeditor_1_1figures_1_1_polygon.html#aa0cb367e4632066f1dbb6e6d5b037bb7">editor::figures::Polygon</a>, <a class="el" href="classeditor_1_1figures_1_1_rectangle.html#a1829b139ea8deed4aa09fe303b1b1e73">editor::figures::Rectangle</a>, <a class="el" href="classeditor_1_1figures_1_1_circle.html#a0a108485ad5b172af754e7a730df5b94">editor::figures::Circle</a>, and <a class="el" href="classeditor_1_1figures_1_1_line.html#a2685918c2ddc4d2c5849aff3b36f22b9">editor::figures::Line</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af83f698f360a14aa3be2040b9f2825c9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -212,31 +237,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="acfc22de6388cdef5a31f78920d8c4943"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void editor::figures::CanvasPrimitive::render </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classeditor_1_1figures_1_1_polygon.html#af3a91669b778793b1f9442eb4ddd36c9">editor::figures::Polygon</a>, <a class="el" href="classeditor_1_1figures_1_1_rectangle.html#ab36ad2ca8e15b4d2b2dd54bd798f08ed">editor::figures::Rectangle</a>, <a class="el" href="classeditor_1_1figures_1_1_circle.html#ab67e622629ba76d2712434d859fc303e">editor::figures::Circle</a>, and <a class="el" href="classeditor_1_1figures_1_1_line.html#ad0b10d0935faf896a0b5ea2551f0dbdd">editor::figures::Line</a>.</p>
 
 </div>
 </div>
