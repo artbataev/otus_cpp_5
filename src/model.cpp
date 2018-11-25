@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <iostream>
 #include "model.h"
 
 namespace editor {

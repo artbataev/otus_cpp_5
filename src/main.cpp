@@ -3,6 +3,7 @@
 #include "controller.h"
 #include "canvas_primitives.h"
 #include <memory>
+#include <iostream>
 
 /**
 * Entry Point
