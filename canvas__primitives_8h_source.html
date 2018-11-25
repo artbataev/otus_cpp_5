@@ -91,118 +91,117 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <a href="canvas__primitives_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="namespaceeditor.html">    7</a></span>&#160;<span class="keyword">namespace </span>editor {</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classeditor_1_1_color.html">   11</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classeditor_1_1_color.html">Color</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="classeditor_1_1_color.html#a777423d6748c3b4e15429a808c085ed1">Color</a>();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="classeditor_1_1_color.html#a777423d6748c3b4e15429a808c085ed1">Color</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_color.html">Color</a>&amp; rhs);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="classeditor_1_1_color.html#a777423d6748c3b4e15429a808c085ed1">Color</a>(uint8_t r_, uint8_t g_, uint8_t b_);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        uint8_t r;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        uint8_t g;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        uint8_t b;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    };</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structeditor_1_1_coordinate.html">   28</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a> {</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structeditor_1_1_coordinate.html#a7ff095ed200c3e859731fd61ec1f8c1d">   29</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="structeditor_1_1_coordinate.html#a7ff095ed200c3e859731fd61ec1f8c1d">x</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structeditor_1_1_coordinate.html#a89deea1ecc1f32526e7fa27acd221e56">   30</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="structeditor_1_1_coordinate.html#a89deea1ecc1f32526e7fa27acd221e56">y</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    };</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="namespaceeditor_1_1figures.html">   34</a></span>&#160;<span class="keyword">namespace </span>editor::figures {</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classeditor_1_1figures_1_1_canvas_primitive.html">   38</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html">CanvasPrimitive</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html#ab6b3c0c0810f9a5ba41c6f474b6f3b1d">CanvasPrimitive</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html#ab6b3c0c0810f9a5ba41c6f474b6f3b1d">CanvasPrimitive</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_color.html">Color</a>&amp; color_);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html#ab6b3c0c0810f9a5ba41c6f474b6f3b1d">CanvasPrimitive</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_color.html">Color</a>&amp; color_, <span class="keywordtype">int</span> z_index_);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html#af83f698f360a14aa3be2040b9f2825c9">move_to_z_index</a>(<span class="keywordtype">int</span> z_index_);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html#a5f0d2b38f040d21743e47a29c4e79736">get_representation</a>() = 0;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classeditor_1_1_color.html">Color</a> color;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">int</span> z_index = 0;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    };</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classeditor_1_1figures_1_1_line.html">   58</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classeditor_1_1figures_1_1_line.html">Line</a> : <span class="keyword">public</span> <a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html">CanvasPrimitive</a> {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classeditor_1_1figures_1_1_line.html#aa7db5bd44650d6cf119c0ae337631914">Line</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_color.html">Color</a>&amp; color_, <span class="keyword">const</span> <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a>&amp; point1_, <span class="keyword">const</span> <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a>&amp; point2_);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        std::string <a class="code" href="classeditor_1_1figures_1_1_line.html#a2685918c2ddc4d2c5849aff3b36f22b9">get_representation</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a> point1;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a> point2;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    };</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classeditor_1_1figures_1_1_circle.html">   72</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classeditor_1_1figures_1_1_circle.html">Circle</a> : <span class="keyword">public</span> <a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html">CanvasPrimitive</a> {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="classeditor_1_1figures_1_1_circle.html#af41a37f03061002d1b29c7ea54271aa2">Circle</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_color.html">Color</a>&amp; color_, <span class="keyword">const</span> <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a>&amp; center_, <span class="keywordtype">double</span> radius_);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        std::string <a class="code" href="classeditor_1_1figures_1_1_circle.html#a0a108485ad5b172af754e7a730df5b94">get_representation</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a> center;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">double</span> radius;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    };</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classeditor_1_1figures_1_1_rectangle.html">   86</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classeditor_1_1figures_1_1_rectangle.html">Rectangle</a> : <span class="keyword">public</span> <a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html">CanvasPrimitive</a> {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="classeditor_1_1figures_1_1_rectangle.html#af710be3ca03d6c6e33127f6a952fb0cf">Rectangle</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_color.html">Color</a>&amp; color_, <span class="keyword">const</span> <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a>&amp; left_top_, <span class="keyword">const</span> <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a>&amp; right_bottom_);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        std::string <a class="code" href="classeditor_1_1figures_1_1_rectangle.html#a1829b139ea8deed4aa09fe303b1b1e73">get_representation</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a> left_top;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a> right_bottom;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    };</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classeditor_1_1figures_1_1_polygon.html">  100</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classeditor_1_1figures_1_1_polygon.html">Polygon</a> : <span class="keyword">public</span> <a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html">CanvasPrimitive</a> {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="classeditor_1_1figures_1_1_polygon.html#aa33fafb2df26975bc640000b0c3d860b">Polygon</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_color.html">Color</a>&amp; color_);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="classeditor_1_1figures_1_1_polygon.html#aa33fafb2df26975bc640000b0c3d860b">Polygon</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_color.html">Color</a>&amp; color_, <span class="keyword">const</span> std::vector&lt;Coordinate&gt;&amp; points_);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="classeditor_1_1figures_1_1_polygon.html#aa33fafb2df26975bc640000b0c3d860b">Polygon</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_color.html">Color</a>&amp; color_, <span class="keyword">const</span> <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a>&amp; start_point);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classeditor_1_1figures_1_1_polygon.html#a0ccdc3a39176c803f30ca751e6c147b9">add_point</a>(<span class="keyword">const</span> <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a>&amp; point);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        std::string <a class="code" href="classeditor_1_1figures_1_1_polygon.html#aa0cb367e4632066f1dbb6e6d5b037bb7">get_representation</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        std::vector&lt;Coordinate&gt; points;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    };</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="namespaceeditor.html">    6</a></span>&#160;<span class="keyword">namespace </span>editor {</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classeditor_1_1_color.html">   10</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classeditor_1_1_color.html">Color</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <a class="code" href="classeditor_1_1_color.html#a777423d6748c3b4e15429a808c085ed1">Color</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="classeditor_1_1_color.html#a777423d6748c3b4e15429a808c085ed1">Color</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_color.html">Color</a>&amp; rhs);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="classeditor_1_1_color.html#a777423d6748c3b4e15429a808c085ed1">Color</a>(uint8_t r_, uint8_t g_, uint8_t b_);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        uint8_t r;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        uint8_t g;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        uint8_t b;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    };</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structeditor_1_1_coordinate.html">   27</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structeditor_1_1_coordinate.html#a7ff095ed200c3e859731fd61ec1f8c1d">   28</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="structeditor_1_1_coordinate.html#a7ff095ed200c3e859731fd61ec1f8c1d">x</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structeditor_1_1_coordinate.html#a89deea1ecc1f32526e7fa27acd221e56">   29</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="structeditor_1_1_coordinate.html#a89deea1ecc1f32526e7fa27acd221e56">y</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    };</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="namespaceeditor_1_1figures.html">   33</a></span>&#160;<span class="keyword">namespace </span>editor::figures {</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classeditor_1_1figures_1_1_canvas_primitive.html">   37</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html">CanvasPrimitive</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html#ab6b3c0c0810f9a5ba41c6f474b6f3b1d">CanvasPrimitive</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html#ab6b3c0c0810f9a5ba41c6f474b6f3b1d">CanvasPrimitive</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_color.html">Color</a>&amp; color_);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html#ab6b3c0c0810f9a5ba41c6f474b6f3b1d">CanvasPrimitive</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_color.html">Color</a>&amp; color_, <span class="keywordtype">int</span> z_index_);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html#af83f698f360a14aa3be2040b9f2825c9">move_to_z_index</a>(<span class="keywordtype">int</span> z_index_);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html#a5f0d2b38f040d21743e47a29c4e79736">get_representation</a>() = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classeditor_1_1_color.html">Color</a> color;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">int</span> z_index = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    };</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classeditor_1_1figures_1_1_line.html">   57</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classeditor_1_1figures_1_1_line.html">Line</a> : <span class="keyword">public</span> <a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html">CanvasPrimitive</a> {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="classeditor_1_1figures_1_1_line.html#aa7db5bd44650d6cf119c0ae337631914">Line</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_color.html">Color</a>&amp; color_, <span class="keyword">const</span> <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a>&amp; point1_, <span class="keyword">const</span> <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a>&amp; point2_);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        std::string <a class="code" href="classeditor_1_1figures_1_1_line.html#a2685918c2ddc4d2c5849aff3b36f22b9">get_representation</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a> point1;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a> point2;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    };</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classeditor_1_1figures_1_1_circle.html">   71</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classeditor_1_1figures_1_1_circle.html">Circle</a> : <span class="keyword">public</span> <a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html">CanvasPrimitive</a> {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="classeditor_1_1figures_1_1_circle.html#af41a37f03061002d1b29c7ea54271aa2">Circle</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_color.html">Color</a>&amp; color_, <span class="keyword">const</span> <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a>&amp; center_, <span class="keywordtype">double</span> radius_);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        std::string <a class="code" href="classeditor_1_1figures_1_1_circle.html#a0a108485ad5b172af754e7a730df5b94">get_representation</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a> center;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">double</span> radius;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    };</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classeditor_1_1figures_1_1_rectangle.html">   85</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classeditor_1_1figures_1_1_rectangle.html">Rectangle</a> : <span class="keyword">public</span> <a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html">CanvasPrimitive</a> {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="classeditor_1_1figures_1_1_rectangle.html#af710be3ca03d6c6e33127f6a952fb0cf">Rectangle</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_color.html">Color</a>&amp; color_, <span class="keyword">const</span> <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a>&amp; left_top_, <span class="keyword">const</span> <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a>&amp; right_bottom_);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        std::string <a class="code" href="classeditor_1_1figures_1_1_rectangle.html#a1829b139ea8deed4aa09fe303b1b1e73">get_representation</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a> left_top;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a> right_bottom;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    };</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classeditor_1_1figures_1_1_polygon.html">   99</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classeditor_1_1figures_1_1_polygon.html">Polygon</a> : <span class="keyword">public</span> <a class="code" href="classeditor_1_1figures_1_1_canvas_primitive.html">CanvasPrimitive</a> {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="classeditor_1_1figures_1_1_polygon.html#aa33fafb2df26975bc640000b0c3d860b">Polygon</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_color.html">Color</a>&amp; color_);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="classeditor_1_1figures_1_1_polygon.html#aa33fafb2df26975bc640000b0c3d860b">Polygon</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_color.html">Color</a>&amp; color_, <span class="keyword">const</span> std::vector&lt;Coordinate&gt;&amp; points_);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="classeditor_1_1figures_1_1_polygon.html#aa33fafb2df26975bc640000b0c3d860b">Polygon</a>(<span class="keyword">const</span> <a class="code" href="classeditor_1_1_color.html">Color</a>&amp; color_, <span class="keyword">const</span> <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a>&amp; start_point);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classeditor_1_1figures_1_1_polygon.html#a0ccdc3a39176c803f30ca751e6c147b9">add_point</a>(<span class="keyword">const</span> <a class="code" href="structeditor_1_1_coordinate.html">Coordinate</a>&amp; point);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        std::string <a class="code" href="classeditor_1_1figures_1_1_polygon.html#aa0cb367e4632066f1dbb6e6d5b037bb7">get_representation</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        std::vector&lt;Coordinate&gt; points;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    };</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
 <div class="ttc" id="classeditor_1_1figures_1_1_polygon_html_aa0cb367e4632066f1dbb6e6d5b037bb7"><div class="ttname"><a href="classeditor_1_1figures_1_1_polygon.html#aa0cb367e4632066f1dbb6e6d5b037bb7">editor::figures::Polygon::get_representation</a></div><div class="ttdeci">std::string get_representation() override</div><div class="ttdef"><b>Definition:</b> canvas_primitives.cpp:71</div></div>
-<div class="ttc" id="classeditor_1_1figures_1_1_canvas_primitive_html"><div class="ttname"><a href="classeditor_1_1figures_1_1_canvas_primitive.html">editor::figures::CanvasPrimitive</a></div><div class="ttdef"><b>Definition:</b> canvas_primitives.h:38</div></div>
-<div class="ttc" id="classeditor_1_1figures_1_1_polygon_html"><div class="ttname"><a href="classeditor_1_1figures_1_1_polygon.html">editor::figures::Polygon</a></div><div class="ttdef"><b>Definition:</b> canvas_primitives.h:100</div></div>
+<div class="ttc" id="classeditor_1_1figures_1_1_canvas_primitive_html"><div class="ttname"><a href="classeditor_1_1figures_1_1_canvas_primitive.html">editor::figures::CanvasPrimitive</a></div><div class="ttdef"><b>Definition:</b> canvas_primitives.h:37</div></div>
+<div class="ttc" id="classeditor_1_1figures_1_1_polygon_html"><div class="ttname"><a href="classeditor_1_1figures_1_1_polygon.html">editor::figures::Polygon</a></div><div class="ttdef"><b>Definition:</b> canvas_primitives.h:99</div></div>
 <div class="ttc" id="classeditor_1_1figures_1_1_circle_html_af41a37f03061002d1b29c7ea54271aa2"><div class="ttname"><a href="classeditor_1_1figures_1_1_circle.html#af41a37f03061002d1b29c7ea54271aa2">editor::figures::Circle::Circle</a></div><div class="ttdeci">Circle(const Color &amp;color_, const Coordinate &amp;center_, double radius_)</div><div class="ttdef"><b>Definition:</b> canvas_primitives.cpp:37</div></div>
 <div class="ttc" id="classeditor_1_1figures_1_1_circle_html_a0a108485ad5b172af754e7a730df5b94"><div class="ttname"><a href="classeditor_1_1figures_1_1_circle.html#a0a108485ad5b172af754e7a730df5b94">editor::figures::Circle::get_representation</a></div><div class="ttdeci">std::string get_representation() override</div><div class="ttdef"><b>Definition:</b> canvas_primitives.cpp:40</div></div>
 <div class="ttc" id="classeditor_1_1figures_1_1_line_html_a2685918c2ddc4d2c5849aff3b36f22b9"><div class="ttname"><a href="classeditor_1_1figures_1_1_line.html#a2685918c2ddc4d2c5849aff3b36f22b9">editor::figures::Line::get_representation</a></div><div class="ttdeci">std::string get_representation() override</div><div class="ttdef"><b>Definition:</b> canvas_primitives.cpp:28</div></div>
 <div class="ttc" id="classeditor_1_1figures_1_1_canvas_primitive_html_ab6b3c0c0810f9a5ba41c6f474b6f3b1d"><div class="ttname"><a href="classeditor_1_1figures_1_1_canvas_primitive.html#ab6b3c0c0810f9a5ba41c6f474b6f3b1d">editor::figures::CanvasPrimitive::CanvasPrimitive</a></div><div class="ttdeci">CanvasPrimitive()=default</div></div>
-<div class="ttc" id="classeditor_1_1figures_1_1_circle_html"><div class="ttname"><a href="classeditor_1_1figures_1_1_circle.html">editor::figures::Circle</a></div><div class="ttdef"><b>Definition:</b> canvas_primitives.h:72</div></div>
+<div class="ttc" id="classeditor_1_1figures_1_1_circle_html"><div class="ttname"><a href="classeditor_1_1figures_1_1_circle.html">editor::figures::Circle</a></div><div class="ttdef"><b>Definition:</b> canvas_primitives.h:71</div></div>
 <div class="ttc" id="classeditor_1_1figures_1_1_rectangle_html_af710be3ca03d6c6e33127f6a952fb0cf"><div class="ttname"><a href="classeditor_1_1figures_1_1_rectangle.html#af710be3ca03d6c6e33127f6a952fb0cf">editor::figures::Rectangle::Rectangle</a></div><div class="ttdeci">Rectangle(const Color &amp;color_, const Coordinate &amp;left_top_, const Coordinate &amp;right_bottom_)</div><div class="ttdef"><b>Definition:</b> canvas_primitives.cpp:48</div></div>
 <div class="ttc" id="classeditor_1_1figures_1_1_polygon_html_a0ccdc3a39176c803f30ca751e6c147b9"><div class="ttname"><a href="classeditor_1_1figures_1_1_polygon.html#a0ccdc3a39176c803f30ca751e6c147b9">editor::figures::Polygon::add_point</a></div><div class="ttdeci">void add_point(const Coordinate &amp;point)</div><div class="ttdef"><b>Definition:</b> canvas_primitives.cpp:67</div></div>
 <div class="ttc" id="classeditor_1_1_color_html_a777423d6748c3b4e15429a808c085ed1"><div class="ttname"><a href="classeditor_1_1_color.html#a777423d6748c3b4e15429a808c085ed1">editor::Color::Color</a></div><div class="ttdeci">Color()</div><div class="ttdef"><b>Definition:</b> canvas_primitives.cpp:5</div></div>
 <div class="ttc" id="classeditor_1_1figures_1_1_line_html_aa7db5bd44650d6cf119c0ae337631914"><div class="ttname"><a href="classeditor_1_1figures_1_1_line.html#aa7db5bd44650d6cf119c0ae337631914">editor::figures::Line::Line</a></div><div class="ttdeci">Line(const Color &amp;color_, const Coordinate &amp;point1_, const Coordinate &amp;point2_)</div><div class="ttdef"><b>Definition:</b> canvas_primitives.cpp:25</div></div>
-<div class="ttc" id="structeditor_1_1_coordinate_html_a89deea1ecc1f32526e7fa27acd221e56"><div class="ttname"><a href="structeditor_1_1_coordinate.html#a89deea1ecc1f32526e7fa27acd221e56">editor::Coordinate::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> canvas_primitives.h:30</div></div>
-<div class="ttc" id="classeditor_1_1figures_1_1_rectangle_html"><div class="ttname"><a href="classeditor_1_1figures_1_1_rectangle.html">editor::figures::Rectangle</a></div><div class="ttdef"><b>Definition:</b> canvas_primitives.h:86</div></div>
-<div class="ttc" id="structeditor_1_1_coordinate_html_a7ff095ed200c3e859731fd61ec1f8c1d"><div class="ttname"><a href="structeditor_1_1_coordinate.html#a7ff095ed200c3e859731fd61ec1f8c1d">editor::Coordinate::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> canvas_primitives.h:29</div></div>
+<div class="ttc" id="structeditor_1_1_coordinate_html_a89deea1ecc1f32526e7fa27acd221e56"><div class="ttname"><a href="structeditor_1_1_coordinate.html#a89deea1ecc1f32526e7fa27acd221e56">editor::Coordinate::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> canvas_primitives.h:29</div></div>
+<div class="ttc" id="classeditor_1_1figures_1_1_rectangle_html"><div class="ttname"><a href="classeditor_1_1figures_1_1_rectangle.html">editor::figures::Rectangle</a></div><div class="ttdef"><b>Definition:</b> canvas_primitives.h:85</div></div>
+<div class="ttc" id="structeditor_1_1_coordinate_html_a7ff095ed200c3e859731fd61ec1f8c1d"><div class="ttname"><a href="structeditor_1_1_coordinate.html#a7ff095ed200c3e859731fd61ec1f8c1d">editor::Coordinate::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> canvas_primitives.h:28</div></div>
 <div class="ttc" id="classeditor_1_1figures_1_1_polygon_html_aa33fafb2df26975bc640000b0c3d860b"><div class="ttname"><a href="classeditor_1_1figures_1_1_polygon.html#aa33fafb2df26975bc640000b0c3d860b">editor::figures::Polygon::Polygon</a></div><div class="ttdeci">Polygon(const Color &amp;color_)</div><div class="ttdef"><b>Definition:</b> canvas_primitives.cpp:59</div></div>
-<div class="ttc" id="classeditor_1_1figures_1_1_line_html"><div class="ttname"><a href="classeditor_1_1figures_1_1_line.html">editor::figures::Line</a></div><div class="ttdef"><b>Definition:</b> canvas_primitives.h:58</div></div>
-<div class="ttc" id="classeditor_1_1_color_html"><div class="ttname"><a href="classeditor_1_1_color.html">editor::Color</a></div><div class="ttdef"><b>Definition:</b> canvas_primitives.h:11</div></div>
+<div class="ttc" id="classeditor_1_1figures_1_1_line_html"><div class="ttname"><a href="classeditor_1_1figures_1_1_line.html">editor::figures::Line</a></div><div class="ttdef"><b>Definition:</b> canvas_primitives.h:57</div></div>
+<div class="ttc" id="classeditor_1_1_color_html"><div class="ttname"><a href="classeditor_1_1_color.html">editor::Color</a></div><div class="ttdef"><b>Definition:</b> canvas_primitives.h:10</div></div>
 <div class="ttc" id="classeditor_1_1figures_1_1_canvas_primitive_html_af83f698f360a14aa3be2040b9f2825c9"><div class="ttname"><a href="classeditor_1_1figures_1_1_canvas_primitive.html#af83f698f360a14aa3be2040b9f2825c9">editor::figures::CanvasPrimitive::move_to_z_index</a></div><div class="ttdeci">void move_to_z_index(int z_index_)</div><div class="ttdef"><b>Definition:</b> canvas_primitives.cpp:20</div></div>
-<div class="ttc" id="structeditor_1_1_coordinate_html"><div class="ttname"><a href="structeditor_1_1_coordinate.html">editor::Coordinate</a></div><div class="ttdef"><b>Definition:</b> canvas_primitives.h:28</div></div>
+<div class="ttc" id="structeditor_1_1_coordinate_html"><div class="ttname"><a href="structeditor_1_1_coordinate.html">editor::Coordinate</a></div><div class="ttdef"><b>Definition:</b> canvas_primitives.h:27</div></div>
 <div class="ttc" id="classeditor_1_1figures_1_1_canvas_primitive_html_a5f0d2b38f040d21743e47a29c4e79736"><div class="ttname"><a href="classeditor_1_1figures_1_1_canvas_primitive.html#a5f0d2b38f040d21743e47a29c4e79736">editor::figures::CanvasPrimitive::get_representation</a></div><div class="ttdeci">virtual std::string get_representation()=0</div></div>
 <div class="ttc" id="classeditor_1_1figures_1_1_rectangle_html_a1829b139ea8deed4aa09fe303b1b1e73"><div class="ttname"><a href="classeditor_1_1figures_1_1_rectangle.html#a1829b139ea8deed4aa09fe303b1b1e73">editor::figures::Rectangle::get_representation</a></div><div class="ttdeci">std::string get_representation() override</div><div class="ttdef"><b>Definition:</b> canvas_primitives.cpp:51</div></div>
 </div><!-- fragment --></div><!-- contents -->
