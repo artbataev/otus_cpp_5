@@ -29,7 +29,7 @@ namespace editor::figures {
         std::stringstream ss;
         ss << "line from ("
                   << point1.x << "," << point1.y << ") to ("
-                  << point2.x << "," << point2.y << ")" << std::endl;
+                  << point2.x << "," << point2.y << ")";
         return ss.str();
     }
 
@@ -40,7 +40,7 @@ namespace editor::figures {
     std::string Circle::get_representation() {
         std::stringstream ss;
         ss << "circle with center in ("
-                  << center.x << "," << center.y << ") with radius " << radius << std::endl;
+                  << center.x << "," << center.y << ") with radius " << radius;
         return ss.str();
     }
 
@@ -52,7 +52,7 @@ namespace editor::figures {
         std::stringstream ss;
         ss << "rectangle, left top: ("
                   << left_top.x << "," << left_top.y << "), right bottom: ("
-                  << right_bottom.x << "," << right_bottom.y << ")" << std::endl;
+                  << right_bottom.x << "," << right_bottom.y << ")";
         return ss.str();
     }
 
@@ -73,7 +73,6 @@ namespace editor::figures {
         ss << "polygon: ";
         for (const auto& point: points)
             ss << "(" << point.x << "," << point.y << ") ";
-        ss << std::endl;
         return ss.str();
     }
 }
