@@ -1,4 +1,5 @@
 #include "canvas_primitives.h"
+#include <sstream>
 
 namespace editor {
     Color::Color() : r{0}, g{0}, b{0} {} // black
@@ -24,29 +25,35 @@ namespace editor::figures {
     Line::Line(const Color& color_, const Coordinate& point1_, const Coordinate& point2_) :
             CanvasPrimitive(color_), point1{point1_}, point2{point2_} {}
 
-    void Line::render() {
-        std::cout << "draw line from ("
+    std::string Line::get_representation() {
+        std::stringstream ss;
+        ss << "line from ("
                   << point1.x << "," << point1.y << ") to ("
                   << point2.x << "," << point2.y << ")" << std::endl;
+        return ss.str();
     }
 
 
     Circle::Circle(const Color& color_, const Coordinate& center_, double radius_) :
             CanvasPrimitive(color_), center{center_}, radius{radius_} {}
 
-    void Circle::render() {
-        std::cout << "draw circle with center in ("
+    std::string Circle::get_representation() {
+        std::stringstream ss;
+        ss << "circle with center in ("
                   << center.x << "," << center.y << ") with radius " << radius << std::endl;
+        return ss.str();
     }
 
 
     Rectangle::Rectangle(const Color& color_, const Coordinate& left_top_, const Coordinate& right_bottom_) :
             CanvasPrimitive(color_), left_top{left_top_}, right_bottom{right_bottom_} {}
 
-    void Rectangle::render() {
-        std::cout << "draw rectangle, left top: ("
+    std::string Rectangle::get_representation() {
+        std::stringstream ss;
+        ss << "rectangle, left top: ("
                   << left_top.x << "," << left_top.y << "), right bottom: ("
                   << right_bottom.x << "," << right_bottom.y << ")" << std::endl;
+        return ss.str();
     }
 
     Polygon::Polygon(const Color& color_) : CanvasPrimitive(color_), points{} {}
@@ -61,10 +68,12 @@ namespace editor::figures {
         points.emplace_back(point);
     }
 
-    void Polygon::render() {
-        std::cout << "draw polygon: ";
+    std::string Polygon::get_representation() {
+        std::stringstream ss;
+        ss << "polygon: ";
         for (const auto& point: points)
-            std::cout << "(" << point.x << "," << point.y << ") ";
-        std::cout << std::endl;
+            ss << "(" << point.x << "," << point.y << ") ";
+        ss << std::endl;
+        return ss.str();
     }
 }

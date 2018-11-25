@@ -38,6 +38,8 @@ namespace editor {
          */
         void save_document(const std::string& path);
 
+        std::vector<std::string> get_elements_representations() const;
+
     private:
         std::vector<std::shared_ptr<figures::CanvasPrimitive>> elements; // using raw address as hash
     };

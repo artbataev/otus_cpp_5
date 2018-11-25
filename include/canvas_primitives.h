@@ -45,11 +45,7 @@ namespace editor::figures {
 
         void move_to_z_index(int z_index_);
 
-        virtual void render() = 0;
-//
-//        virtual std::string serialize() = 0;
-//
-//        virtual void deserialize(const std::string& data) = 0;
+        virtual std::string get_representation() = 0;
 
     private:
         Color color;
@@ -63,7 +59,7 @@ namespace editor::figures {
     public:
         Line(const Color& color_, const Coordinate& point1_, const Coordinate& point2_);
 
-        void render() override;
+        std::string get_representation() override;
 
     private:
         Coordinate point1;
@@ -77,7 +73,7 @@ namespace editor::figures {
     public:
         Circle(const Color& color_, const Coordinate& center_, double radius_);
 
-        void render() override;
+        std::string get_representation() override;
 
     private:
         Coordinate center;
@@ -91,7 +87,7 @@ namespace editor::figures {
     public:
         Rectangle(const Color& color_, const Coordinate& left_top_, const Coordinate& right_bottom_);
 
-        void render() override;
+        std::string get_representation() override;
 
     private:
         Coordinate left_top;
@@ -111,7 +107,7 @@ namespace editor::figures {
 
         void add_point(const Coordinate& point);
 
-        void render() override;
+        std::string get_representation() override;
 
     private:
         std::vector<Coordinate> points;
